@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tags de agrupamento</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            background-color: white;
+        }
+        li{
+            display: inline-block;
+            margin: 2em 1em 0em 0em;
+        }
+        nav{
+            margin-left: -3em;
+        }
+        header{
+            background-color: #FDB172;
+            padding: 1em;
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, .7);
+            border-radius: 5px;
+        }
+        main > section#principal{
+            background-color: #ffa153;
+            padding: 2em;
+            width: 45em;
+            height: 22em;
+            margin: 2em 2em 2em 0em;
+            box-shadow: 2px 2px 5px black;
+            border-radius: 20px;
+        }
+
+        aside{
+            position: absolute;
+            background-color: #FA927D;
+            width: 34em;
+            padding: 0.7em;
+            margin: -27em 2em 2em 52em;
+            box-shadow: 2px 2px 5px black;
+            border-radius: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Usando tags de agrupamento</h1>
+        <p class="centralizar"><a href="index.html">Voltar para home</a></p>
+        <nav>
+            <ul class="centralizar">
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="principal">
+            <h2>Exemplo de section dentro do main</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, sunt! Dolor nulla rerum alias necessitatibus repudiandae aspernatur, beatae minima sunt officia incidunt praesentium repellendus nisi culpa at iusto modi error?</p>
+        </section>
+    </main>
+    <aside>
+        <h2>Conteúdo do aside</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam nihil eius, hic voluptates autem ratione aliquid perferendis culpa ea iusto maxime beatae praesentium, ducimus reprehenderit molestias. Voluptas beatae ex tempora!</p>
+    </aside>
+    <footer>
+        &copy; 2023 - Desenvolvido por Luan Felipe
+    </footer>
+    
+</body>
+</html>

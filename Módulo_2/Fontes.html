@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        aside {
+            position: absolute;
+            margin: -12.5em 0em 0em 60em; /*margin-top  margin-right  margin-bottom  margin-left*/
+            background-color: #26968D;
+            padding: 1em;
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.9);
+            outline: dashed 2px black;
+        }
+
+        span#externalParag {
+            font-family: fontExternaParag, sans-serif;
+            font-size: 2em;
+            font-weight: normal;
+            font-style: normal;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Trabalhando com Fontes</h1>
+    <p class="centralizar"><a href="index.html">Voltar para a Home</a>
+    <p>
+        <hr>
+
+    <h2>Medidas Absolutas</h2>
+    <p>São elas: cm, mm, in(polegada), px, pt, pc</p>
+
+    <h2>Medidas relativas</h2>
+    <p>em, ex, rem, vw, vh, %</p>
+
+    <aside class="important">
+        <h3>Importante!!</h3>
+        <ul>
+            <li>1em = 16px</li>
+            <li>Recomendações W3C: em e px</li>
+        </ul>
+    </aside>
+
+    <hr>
+    <!--Usando uma fonte do Google FOnts-->
+    <h2>Usando as fontes do Google Fonts</h2>
+    <span id="googleFonts">
+        <ol>
+            <li>Acessar <a href=https://fonts.google.com target="_blank">fonts.google</a></li>
+            <li>Escolher a fonte</li>
+            <li>Selecionar os tipos das fonte que você escolheu</li>
+            <li>Ir até <em>"view select families"</em> (Canto direito superior)</li>
+            <li>Copiar o import e colar no css</li>
+        </ol>
+    </span>
+
+    <hr>
+    <h2 id="externalTitle">Importando fontes externas (Não do Google Fonts)</h2>
+    <span id="externalParag">
+        <ol>
+            <li>Baixar a fonte do site</li>
+            <li>Adicionar um <em>@font-face</em> no css e colocar a url da fonte</li>
+        </ol>
+    </span>
+</body>
+
+</html>

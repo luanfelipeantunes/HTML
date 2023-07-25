@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Luan Felipe Antunes">
+
+    <!--Favicon (Icone na guia)-->
+    <!--Sites: iconarchive; favicon.cc; favicon.io-->
+    <link rel="icon" href="imagens/Rocket-icon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Formatações</title>
+</head>
+<body>
+    <!--NEGRITO(strong) e Itálico(em), ambas com sentido SEMÂNTICO-->
+    <h1>Formatações de Texto</h1>
+    <h2>Negrito e Itálico</h2>
+    <p>Aqui <strong>Negrito</strong> e <em>Itálico</em> possuem valores semânticos com &lt;strong&gt; e &lt;em&gt;,
+        respectivamente.</p>
+    <!--Formatações adicionais-->
+    <h2>Marcação de Texto</h2>
+    <p>Marcando <mark style="background-color: #E38D66;">um texto</mark> com &lt;mark&gt; com uso de Css3 (Pontual)
+        dentro da tag.</p>
+
+    <h2>Texto grande e texto pequeno</h2>
+    <p>Exemplo de <big>texto grande</big></p>
+    <p>Exemplo de <small>texto pequeno</small></p>
+
+    <h2>Texto excluído e texto inserido</h2>
+    <p>Exemplo de <del>texto deletado</del></p>
+    <p> Exemplo de <ins>texto inserido</ins></p>
+
+    <h2>Texto subscrito e texto sobrescrito</h2>
+    <p>Exemplo de texto subscrito: H<sub>2</sub>0</p>
+    <p>Exemplo de texto sobrescrito: x<sup>2</sup>+4</p>
+
+    <h2>Códigos em linguagens de programação</h2>
+    <p>O elemento <code>document.getElementById('Teste')</code> da linguagem JavaScript escrito com a formatação de código mas sem identação.</p>
+    <p>Código de Python com identação:</p>
+    <p>
+        <pre><code>
+num=int(input('Digite um número'))
+if num % 2 == 0:
+    print(f '{num} É PAR')
+else:
+    print(f '{num} É ÍMPAR')
+print('Fim do programa')
+        </code></pre>
+    </p>
+
+    <!--Citações e as diferenças de formatação-->
+    <h2>Citações</h2>
+    <p><q>O sucesso é a soma de pequenos esforços repetidos dia após dia</q></p>
+    <blockquote cite="Caio Carneiro - Seja Foda!">
+        <q>Medíocre é uma pessoa que, podendo dar o seu melhor, se contenta em fazer apenas o possível.</q> Seja Foda! - Caio Carneiro
+    </blockquote>
+
+    <!--Abreviações-->
+    <h2>Abreviações</h2>
+    <p>Exemplo de abreviações: <abbr title="HiperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheet">CSS</abbr>.</p>
+
+    <!--Texto Invertido (Pode ser Esquerda -> Direira) e Direita -> Esquerda-->
+    <h2>Texto Invertido(PRA QUÊ?)</h2>
+    <p><bdo dir="rtl">Aqui um exemplo de texto ao contrário</bdo></p>
+</body>

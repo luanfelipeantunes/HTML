@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/Rocket-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Listas e links</title>
+
+    <style>
+        ol.musica>li{
+          margin-top: 1.5em;  
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <h1>Listas em HTML 5</h1>
+    <h3 class="centralizar"><a href="index.html" rel="previous">Voltar para a Home</a></h3>
+    <hr>
+
+    <!--Listas ordenadas-->
+    <!--type: "1", "A/a", "I/i"-->
+    <h2>Listas Ordenadas</h2>
+    <ol type="1" start="1">
+        <li>Acordar</li>
+        <li>Tomar café</li>
+        <li>Arrumar meu almoço</li>
+    </ol>
+
+    <!--Listas Não Ordenadas-->
+    <!--type: "disc", "circle" e "square" -->
+    <h2>Listas Não Ordenadas</h2>
+    <ul type="disc">
+        <li>Pão</li>
+        <li>Arroz</li>
+        <li>Manteiga</li>
+    </ul>
+    <hr>
+
+    <!--Misturando Listas-->
+    <h2>Misturando listas</h2>
+    <h3>Minhas músicas favoritas</h3>
+    <ul>
+        <li>Modões</li>
+        <ol class="musica">
+            <h2>Clique para baixar o arquivo zip:</h2>
+            <li><a href="midias/Um degrau na escada.rar" download="midias/Um degrau na escada.rar" type="audio/mpeg">Um degrau na escada - Chico Rey e Paraná</a></li>
+            <li><a href="midias/Ta com raiva de mim.rar" download="midias/Ta com raiva de mim.rar">Tá com raiva de mim - Chico Rey e Paraná</a></li>
+            <li>Casa de Caboclo - Rick e Renner</li>
+        </ol>
+        <li>Novas</li>
+        <ol class="musica">
+            <!--Links para páginas EXTERNAS-->
+            <h2>Clique para ouvir:</h2>
+            <li><a href="https://www.youtube.com/watch?v=QxZFjShiXhA" target="_blank" rel="external">Traumatizei - Henrique e Juliano</a></li>
+            <li><a href="https://www.youtube.com/watch?v=CWJc5gepckI" target="_blank" rel="external">Pino da Granada - Murilo Huff</a></li>
+            <li><a href="https://www.youtube.com/watch?v=KdQXRN9H71o" target="_blank" rel="external">One day less - Anson Seabra</a></li>
+        </ol>
+    </ul>
+
+    <h3>Meus cantores favoritos</h3>
+    <ul type="square">
+        <li>Antigos</li>
+            <ul type="circle">
+                <li>Chico Rey e Paraná</li>
+                <li>João Paulo e Daniel</li>
+                <li>Victor e Leo</li>
+            </ul>
+        <li>Novos</li>
+            <ul type="circle">
+                <li>Henrique e Juliano</li>
+                <li>Bruno e Marrone</li>
+                <li>Fernando e Sorocaba</li>
+            </ul>
+    </ul>
+    <hr>
+
+    <!--Listas de definições-->
+    <h2>Listas de Definições</h2>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação para criação de sites.</dd>
+        <dt>Css</dt>
+        <dd>Linguagem de marcação para design de um site.</dd>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação para interatividade de um site.</dd>
+    </dl>
+</body>
+</html>

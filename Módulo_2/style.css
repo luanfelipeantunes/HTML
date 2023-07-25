@@ -1,0 +1,116 @@
+@charset "UTF-8";
+
+/* Shorthand font: font-style - font-weight- font-size - font-family */
+
+/*Importando do Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Sigmar&display=swap'); /*Para os h2*/
+
+/*Dando nome à familia de fontes importada*/
+@font-face {
+    font-family: paragrafoExemplo ; /*Para os p*/
+    src: url('https://fonts.googleapis.com/css2?family=Sigmar&family=Ysabeau+Infant:ital,wght@0,100;0,400;1,300&display=swap');
+}
+
+/*Importando fonte externa*/
+/*Tipos de format():
+    - opentype(otf)
+    - truetype(ttf)
+    - embedded-opentype
+    - truetype-aat(apple advanced t)*/
+@font-face {
+    font-family: fontExternaTitle;
+    src: url('fonts/Cushy.otf') format(opentype);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: fontExternaParag;
+    src: url('fonts/Queensha.ttf') format(truetype);
+}
+
+
+
+.cores{
+    color: #FDB172, #E38D66, #FA927D, #E36966, #fd72ad;
+}
+
+body{
+    background-color: rgba(255, 255, 255, 0.795);
+    color: rgba(0, 0, 0, 0.9);
+    font-family: Arial, sans-serif;
+
+    /*Fica com um fundo fixo*/
+    background-attachment: fixed;
+
+    /*Criando gradiente -- Pode ser radial-gradiente(circle)*/
+    background-image: linear-gradient(to top,#fdb172c7, #e38d66d2, #fa927dd3 );
+}
+
+.centralizar{
+    margin-left: 600px;
+}
+
+hr{
+    padding: 2px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+h1{
+    box-shadow: 2px 2px 2px rgba(2, 2, 2, 0.836);
+    text-align: center;
+    background-color: #E38D66;
+    font-family: cursive;
+}
+
+h2{
+    font-family: 'Sigmar', cursive;
+    font-size: 1.6em;
+}
+
+a{
+    color: #E38D66;
+    text-shadow: 3px 3px 3px rgba(2, 2, 2, .6); /*text-shadow: horizontal vertical espalhamento cor*/
+    text-decoration: none;
+    background-color: #26968D;                                      
+    padding: 8px;   /*padding-top   padding-right   padding-bottom   padding-left*/
+    font-family: Verdana, sans-serif;
+    margin-top: 10px;
+}
+
+a:focus{
+    color: #65E5DB;
+    text-decoration: underline;
+}
+
+a:hover{
+    color: aliceblue;
+    background-color: #E36966;
+    text-decoration: underline;
+}
+a:visited{
+    color: #fd72ad;
+}
+
+p{
+    text-align: justify;
+    font-family: paragrafoExemplo;
+    font-size: 1.5em;
+}
+
+/*Texto usando uma fonte importada do Google Fonts*/
+span#googleFonts{
+    font-family: 'paragrafoExemplo', sans-serif;
+    font-size: 1.4em;
+}
+
+/*Usando as fontes importadas de sites diferentes do google fonts*/
+h2#externalTitle{
+    font-family: fontExternaTitle;
+    font-size: 2em;
+    font-weight: normal;
+}
+
+footer{
+    font-family: fontExternaParag;
+}
+

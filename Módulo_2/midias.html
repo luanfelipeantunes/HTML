@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Mídias no HTML 5(Imagem, áudio, vídeo)</h1>
+    <p class="centralizar"><a href="index.html" target="_self" rel="previous">Voltar ao início</a></p>
+    <hr>
+
+    <!--Forma padrão de adicionar imagem-->
+    <h2>Adicionando imagem da forma tradicional</h2>
+    <img src="imagens/music.png" alt="Tablatura de musica" type="image">
+    <hr>
+
+    <!--Imagens adaptativas ao tamanho da tela do usúario-->
+    <h2>imagens responsivas</h2>
+    <picture>
+        <h3>Imagem muda de acordo com o tamanho da tela do usuário</h3>
+        <p>Telas maiores que 1050px: Imagem Grande</p>
+        <p>Telas entre 750 e 1050px: Imagem Média</p>
+        <p>Telas menores que 750px: Imagem Pequena</p>
+
+        <!--Em uma tela de até 750px vai carregar a imagem PEQUENA-->
+        <source media="(max-width: 750px)" srcset="imagens/img-p.png" type="image/png">
+        <!--Em uma tela de até 1050px vai carregar a imagem MÉDIA-->
+        <source media="(max-width: 1050px)" srcset="imagens/img-m.png" type="image/png">
+        <!--Para telas maiores que 1050px vai carregar a imagem GRANDE-->
+        <img src="imagens/img-g.png" alt="Imagem grande">
+    </picture>
+    <hr>
+
+    <!--Áudios em HTML5-->
+    <h2>Áudios</h2>
+    <!--Parâmetros possíveis:
+    Preload: auto, metadata, none (O que baixar logo ao carregar o site)
+    controls: Para aparecer o reprodutor de áudio
+    autoplay: Para tocar automático
+    loop: Sempre recomeçar o áudio ao terminar-->
+    <p>Tá com raiva de mim - Chico Rey e Paraná</p>
+    <audio preload="metadata" type="audio/mpeg" controls>
+        <source src="midias/Ta com raiva de mim.mp3">
+    </audio>
+
+    <p>Um degrau na escada - Chico Rey e Paraná</p>
+    <audio preload="none" controls type="audio/mpeg">
+        <source src="midias/Um degrau na escada.mp3">
+    </audio>
+    <hr>
+
+    <!--Vídeos locais em HTML 5-->
+    <!--Usar -handbrake- para mudanças de formatos de vídeos-->
+    <h2>Vídeos hospedados LOCALMENTE</h2>
+    <p>Esse vídeo está localizado dentro da minha própria máquina</p>
+    <!--poster para definir a tumbnail do vídeo-->
+    <video controls height="315px" poster="imagens/cachoeira.png" loop>
+        <source src="midias/cachoeira.mp4" type="video/mp4">
+    </video>
+    <hr>
+
+    <!--Inserindo vídeos direto do YouTube-->
+    <h2>Inserindo vídeos do YouTube</h2>
+    <p>Este vídeo vem direto do YouTube</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/LW0bhKitRBk" title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+    <hr>
+
+    <h2>Vídeos do VÍMEO</h2>
+    <iframe src="https://player.vimeo.com/video/330207644?h=6a9e658aaf&color=ff0179&byline=0&portrait=0" width="560"
+        height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+
+
+</body>
+
+</html>

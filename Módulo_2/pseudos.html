@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudos</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!--Usando os icones do google fonts-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+      
+      
+        
+    
+    <style>
+        /*Aplicado ao elemento filho p que possue o pai div*/
+        div > p{
+            display: none;
+        }
+
+        /*Quando houver o hover *SOBRE A DIV*
+        é mexido no elemento p filho da div*/
+        div#hoverExemplo:hover > p{
+            display: block;
+            background-color: #E36966;
+            text-align: center;
+            color: white;
+            border: 1px solid black;
+        }
+
+        /*Aplicado sobre todas as divs*/
+        div{
+            background-color: #E36966;
+            border: 2px solid black ; /*border-radius  border-style  border-color*/
+            width: 25em;
+            padding: 1em;
+        }
+
+        li{
+            display: inline-block;
+        }
+        
+        /*Adicionando um ícone ANTES do conteúdo*/
+        a.linkBefore::before{
+            content: "\e89e"; /* Código unicode da flecha para a direita */
+            font-family: 'Material Icons';
+            display: inline-block;
+            margin-right: 0.5em; /* Espaçamento à direita do ícone */
+        }
+
+        /*Adicionado " [link]" após o conteúdo*/
+        a.linkBefore::after{
+            content: ' [link]';
+            font-size: 0.7em;
+            color: rgb(94, 94, 94);
+            text-shadow: none;
+            font-weight: bold
+        }
+    </style>
+
+</head>
+<body>
+        <h1>PseudoClasses</h1>
+        <p class="centralizar"><a href="index.html">Voltar para a Home</a><p>
+        <hr>
+
+        <h2>:hover</h2>
+        <p>Quando passar o mouse sobre</p>
+        <div id="hoverExemplo">Passe o mouse e irá aparecer um texto secreto <br>(Protótipo de um menu suspenso)
+            <p>Texto escondido...</p>
+        </div>
+
+        <h2>:visited + ::before + ::after</h2>
+        <p>visited: Quando o link já foi visitado (fica rosa)</p>
+        <p>before: Adiciona conteúdo antes(Adicionei o ícone)</p>
+        <p>after: Adiciona algo depois do conteúdo(Adicionei " [link]")</p>
+        <ul>
+            <li><a class="linkBefore" href="https://youtu.be/zDjnWEB_cjg" target="_blank">Música - Caçada de tatu</a></li>
+            <li><a class="linkBefore" href="https://youtu.be/OILEQnV_cDU" target="_blank">Música - Não largo de mão</a></li>
+        </ul>
+        <hr>
+</body>
+</html>
