@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: font-title;
+    src: url("Fontes/Quella.otf");
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    
+}
+
+main{
+    background-color: aliceblue;
+}
+
+header#cabecalho{
+    position: relative;
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 200px;
+}
+
+header#cabecalho > div#conteudo > h1{
+    font-family: font-title, cursive;
+    font-size: 50pt;
+}
+
+header#cabecalho > div#conteudo > p{
+    font-size: 13pt;
+}
+
+header#cabecalho > div#conteudo{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+main > p{
+    padding: 20px;
+    margin-top: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: normal;
+}
+
+a:hover{
+    font-weight: bolder;
+    transition: 0.6s;
+    font-size: 17pt;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
