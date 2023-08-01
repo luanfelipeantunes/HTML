@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<!--Metadados-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Luan Felipe Antunes">
+
+    <!--Favicon (Icone na guia)-->
+    <!--Sites: iconarchive; favicon.cc; favicon.io-->
+    <link rel="icon" href="imagens/Rocket-icon.png" type="image/x-icon">
+
+    <!--Link para o estilo css EXTERNO-->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Luan Felipe</title>
+
+</head>
+
+<style>
+    table{
+        width: 600px;
+        border-collapse: collapse;
+        position: relative;
+    }
+    caption{
+        background-color: rgb(58, 58, 58);
+        padding: 20px;
+        border: 1px solid black;
+    }
+    thead > tr > th{
+        position: sticky;
+        top: -1px;
+        background-color: rgb(58, 58, 58);
+    }
+    th{
+        background-color: rgb(58, 58, 58);
+    }
+    td, th{
+        border: 1px solid black;
+        padding: 10px;
+        text-align: center;
+    }
+    tbody > tr:nth-child(2n){ /**Pode ser odd ou even (par/ímpar) - celulas ímpares//*Efeito zebrado - A cada 2 linhas adiciona o background-color*/
+        background-color: lightgray;
+    }
+</style>
+
+<body>
+    <h1>Tabelas</h1>
+    <h3 class="centralizar"><a href="index.html" rel="previous">Voltar para a Home</a></h3>
+    <hr>
+
+    <table>
+        <caption>População POR ESTADO</caption>
+        <thead>
+            <th>Estado</th>
+            <th>População</th>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td>44 420 459</td>
+            </tr>
+            <tr>
+                <td> Minas Gerais</td>
+                <td>20 538 718</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>16 054 524</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td>14 136 417</td>
+            </tr>
+            <tr>
+                <td>Paraná
+                </td>
+                <td>11 443 208</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th>Total Habitantes</th>
+                <th>203 062 512</th>
+            </tr>
+
+        </tfoot>
+    </table>
+
+
+    
+</body>
+</html>
