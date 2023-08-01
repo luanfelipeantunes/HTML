@@ -5,9 +5,15 @@
     src: url("Fontes/Quella.otf");
 }
 
+@font-face {
+    font-family: fonteparag;
+    src: url(Fontes/Cheesecake.ttf);
+}
+
 *{
     padding: 0;
     margin: 0;
+    font-size: 1em;
 }
 
 body{
@@ -19,20 +25,24 @@ main{
 }
 
 header#cabecalho{
+    display: block;
     position: relative;
     background-color: black;
     color: white;
     text-align: center;
-    height: 200px;
+    height: 20vw;
+    
 }
 
 header#cabecalho > div#conteudo > h1{
     font-family: font-title, cursive;
-    font-size: 50pt;
+    margin-top: 1.15em;
+    font-size: 6vw;
+
 }
 
 header#cabecalho > div#conteudo > p{
-    font-size: 13pt;
+    font-size: 1.7vw;
 }
 
 header#cabecalho > div#conteudo{
@@ -42,9 +52,38 @@ header#cabecalho > div#conteudo{
     transform: translate(-50%, -50%);
 }
 
-main > p{
-    padding: 20px;
-    margin-top: 20px;
+p{
+    font-family: fonteparag;
+    font-size: 5vw;
+    margin-left: 1.3em;
+    margin-bottom: 3.5em;
+    line-height: 1.8em;
+}
+
+.sombra{
+    background-color: rgba(0, 0, 0, 0.479);
+    color: aliceblue;
+    width: 48vw;
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -50%);
+    padding: 10px;
+    line-height: 1.6em; 
+}
+div#div2{
+    background-image: url(imagens/flor.jpg);
+    background-position: right center;
+    height: 85vw;
+    background-size: cover;
+    position: relative;
+}
+
+div#div5{
+    background-image: url(imagens/livro.jpg);
+    background-position: right center;
+    height: 85vw;
+    background-size: cover;
+    position: relative;
 }
 
 a{
@@ -71,8 +110,11 @@ a:hover{
 
 
 
-footer{
+footer > p{
     background-color: black;
     color: white;
     text-align: center;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    font-size: 3vw;
 }
