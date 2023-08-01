@@ -27,6 +27,7 @@ header#cabecalho{
     text-align: center;
     height: 20vw;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.288);
+    font-variant: small-caps; /*Tudo letra maiúscula e 1ª maior*/
 }
 
 header#cabecalho > div#conteudo > h1{
