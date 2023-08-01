@@ -15,11 +15,6 @@
     margin: 0;
     font-size: 1em;
 }
-
-body{
-    
-}
-
 main{
     background-color: aliceblue;
 }
@@ -31,7 +26,7 @@ header#cabecalho{
     color: white;
     text-align: center;
     height: 20vw;
-    
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.288);
 }
 
 header#cabecalho > div#conteudo > h1{
@@ -58,18 +53,21 @@ p{
     margin-left: 1.3em;
     margin-bottom: 3.5em;
     line-height: 1.8em;
+    text-shadow: 1px 1px 5px black;
 }
 
 .sombra{
     background-color: rgba(0, 0, 0, 0.479);
     color: aliceblue;
-    width: 48vw;
+    width: 50vw;
     position: absolute;
     top: 50%;
     transform: translate(0%, -50%);
     padding: 10px;
     line-height: 1.6em; 
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.767);
 }
+
 div#div2{
     background-image: url(imagens/flor.jpg);
     background-position: right center;
@@ -77,6 +75,7 @@ div#div2{
     height: 85vw;
     background-size: cover;
     position: relative;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.801);
 }
 
 div#div5{
@@ -86,6 +85,7 @@ div#div5{
     height: 85vw;
     background-size: cover;
     position: relative;
+    box-shadow: 2px 2px 5px black;
 }
 
 a{
