@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<!--Metadados-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Luan Felipe Antunes">
+
+    <!--Favicon (Icone na guia)-->
+    <!--Sites: iconarchive; favicon.cc; favicon.io-->
+    <link rel="icon" href="imagens/Rocket-icon.png" type="image/x-icon">
+
+    <!--Link para o estilo css EXTERNO-->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Luan Felipe</title>
+
+</head>
+
+<style>
+    table{
+        width: 30vw;
+        height: 20vh;
+        border-collapse: separate;
+    }
+    table#desafio4{
+        border-collapse: collapse;
+        width: 40vw;
+        height: 40vh;
+    }
+
+    td, th{
+        border: 2px solid black;
+        padding: 10px;
+        text-align: center;
+        border-radius: 5px;
+    }
+
+    th{
+        background-color: gray;
+        font-size: 15pt;
+    }
+    th.media{
+        color: aliceblue;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bolder;
+    }
+</style>
+
+<body>
+    <h1>Desafio Tabelas</h1>
+    <h3 class="centralizar"><a href="index.html" rel="previous">Voltar para a Home</a></h3>
+    <hr>
+    <h2>Desafio 1</h2>
+    <table>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td rowspan="2">3</td>
+            <td>4</td>
+        </tr>
+
+        <tr>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+        </tr>
+
+        <tr>
+            <td colspan="3">8</td>
+            <td>9</td>
+        </tr>
+
+        <tr>
+            <td rowspan="2">10</td>
+            <td colspan="2">11</td>
+            <td>12</td>
+        </tr>
+
+        <tr>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+        </tr>
+    </table>
+    <hr>
+
+    <h2>Desafio 2</h2>
+
+    <table>
+        <tr>
+            <td colspan="4">A</td>
+            <td rowspan="4">B</td>
+        </tr>   
+
+        <tr>
+            <td rowspan="4">C</td>
+            <TD>D</TD>
+            <TD>E</TD>
+            <TD>F</TD>
+        </tr>
+
+        <tr>
+            <TD>G</TD>
+            <TD>H</TD>
+            <TD>I</TD>
+        </tr>
+
+        <tr>
+            <TD>J</TD>
+            <TD>K</TD>
+            <TD>L</TD>
+        </tr>
+
+        <tr>
+            <TD colspan="4">M</TD>
+        </tr>
+    </table>
+
+    <hr>
+    <h2>Desafio 3</h2>
+
+    <table id="desafio4">
+        <thead>
+            <caption>Notas por Área</caption>
+            <tr>
+                <th rowspan="2" scope="colgroup">Área</th>
+                <th rowspan="2" scope="col">Disciplinas</th>
+                <th colspan="2" scope="colgroup">Notas</th>
+                <th rowspan="2" scope="col">Média</th>
+            </tr>
+            <tr>
+                <th scope="col">Nota 1</th>
+                <th scope="col">Nota 2</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th rowspan="4" scope="rowgroup">Exatas</th>
+                <td>Matemática</td>
+                <td>0,0</td>
+                <td>0,0</td>
+                <td>0,0</td>
+            </tr>
+            <tr>
+                <td>Física</td>
+                <td>0,0</td>
+                <td>0,0</td>
+                <td>0,0</td>
+            </tr>
+            <tr>
+                <td>Química</td>
+                <td>0,0</td>
+                <td>0,0</td>
+                <td>0,0</td>
+            </tr>
+            <tr>
+                <td>Biologia</td>
+                <td>0,0</td>
+                <td>0,0</td>
+                <td>0,0</td>
+            </tr>
+            <tr>
+                <th colspan="4" scope="row" class="media">Média de Exatas</th>
+                <td>0,0</td>
+            </tr>
+            <tr>
+                <th rowspan="2" scope="rowgroup">Humanas</th>
+                <td>História</td>
+                <td>0,0</td>
+                <td>0,0</td>
+                <td>0,0</td>
+            </tr>
+            <tr>
+                <td>Geografia</td>
+                <td>0,0</td>
+                <td>0,0</td>
+                <td>0,0</td>
+            </tr>
+            <tr>
+                <th class="media" colspan="4" scope="row">Média de Humanas</th>
+                <td>0,0</td>
+            </tr>
+
+            
+
+        </tbody>
+
+
+    </table>
+</body>
