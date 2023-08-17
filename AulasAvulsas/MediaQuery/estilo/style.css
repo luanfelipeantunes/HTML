@@ -12,6 +12,7 @@ html, body{
     height: 100vh;
     background-size: contain;
     background-repeat: no-repeat;
+    background-position: bottom center;
 }
 
 h1{
