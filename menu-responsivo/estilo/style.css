@@ -7,7 +7,7 @@
 }
 
 body{
-    width: 96vw;
+    width: 100vw;
     height: 100vh;
 }
 
@@ -18,6 +18,28 @@ header{
 header > h1{
     text-align: center;
     padding: 10px;
+}
+
+div#burguer{
+    background-color: rgb(44, 44, 44);
+    color: aliceblue;
+    padding: 5px;
+    text-align: center;
+}
+
+div#burguer > span{
+    font-size: 2em;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.664);
+}
+
+div#burguer:hover{
+    background-color: rgb(219, 219, 219);
+    color: rgba(26, 26, 26, 0.822);
+    cursor: pointer;
+}
+
+menu#itens{
+    display: none;
 }
 
 menu > ul > li{
